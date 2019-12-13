@@ -3,13 +3,18 @@ Cross-View Kernel Similarity Metric Learning Using Pairwise Constraints for Pers
 T M Feroz Ali, Subhasis Chaudhuri
 https://arxiv.org/abs/1909.11316
 
-This repository contains the complete code of KXQDA. Using this code you can reproduce the result in Table 1 of our paper.
-
+This repository contains the complete code of KXQDA. Using this code you can reproduce our result in Table 1 (CUHK01 dataset) of our paper.
 GOG + k-XQDA : 
 R1 = 62.23% 
 R5 = 83.09% 
 R10 = 89.46%
 R20 = 94.43%
+
+You need to download the GOG features for CUHK01 dataset and place the following files inside the folder 'Kernel-XQDA/Features':
+1) CUHK01_feature_all_GOGyMthetaHSV.maty
+2) CUHK01_feature_all_GOGyMthetaLab.mat
+3) CUHK01_feature_all_GOGyMthetanRnG.mat
+4) CUHK01_feature_all_GOGyMthetaRGB.mat
 
 If you find this work useful, please kindly cite our paper.
 
