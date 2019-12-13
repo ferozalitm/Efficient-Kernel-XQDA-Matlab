@@ -3,7 +3,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %Set the root path of directry (edit according to your code location)
-directry = '/home/feroz/Documents/PhD_Research/Codes/My_Workspace/Interns/KXQDA/';
+directry = 'KXQDA/';
 
 addpath([directry '/Lib/']);
 addpath([directry '/DataManage/']);
