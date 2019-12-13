@@ -1,5 +1,4 @@
 # Kernel-XQDA (KXQDA)
-======================
 Cross-View Kernel Similarity Metric Learning Using Pairwise Constraints for Person Re-identification,
 T M Feroz Ali, Subhasis Chaudhuri
 https://arxiv.org/abs/1909.11316
@@ -13,8 +12,8 @@ If you find this work useful, please kindly cite our paper.
 }
 
 This repository contains the complete code of KXQDA. Using this code you can reproduce the result in Table 1 of our paper.
+
 GOG + k-XQDA : 
-==============
 R1 = 62.23% 
 R5 = 83.09% 
 R10 = 89.46%
