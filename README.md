@@ -10,11 +10,18 @@ R5 = 83.09%
 R10 = 89.46%
 R20 = 94.43%
 
-You need to download the GOG features for CUHK01 dataset and place the following files inside the folder 'Kernel-XQDA/Features':
-1) CUHK01_feature_all_GOGyMthetaHSV.maty
-2) CUHK01_feature_all_GOGyMthetaLab.mat
-3) CUHK01_feature_all_GOGyMthetanRnG.mat
-4) CUHK01_feature_all_GOGyMthetaRGB.mat
+Code setup:
+-------------
+1) You need to download the GOG features for CUHK01 dataset (available at http://www.i.kyushu-u.ac.jp/~matsukawa/ReID_files/GOG_CUHK01.zip) and place the following files inside the folder 'Kernel-XQDA/Features':
+a) CUHK01_feature_all_GOGyMthetaHSV.maty
+b) CUHK01_feature_all_GOGyMthetaLab.mat
+c) CUHK01_feature_all_GOGyMthetanRnG.mat
+d) CUHK01_feature_all_GOGyMthetaRGB.mat
+
+2) Edit config.m file:
+Chage the path 'directry' according to the location of code in your system.
+
+3) Run demo_KXQDA.m
 
 If you find this work useful, please kindly cite our paper.
 
