@@ -1,4 +1,4 @@
-# Kernel-XQDA (KXQDA)
+# Kernel Cross-view Quadratic Discriminant Analysis (K-XQDA)
 Cross-View Kernel Similarity Metric Learning Using Pairwise Constraints for Person Re-identification
 T M Feroz Ali, Subhasis Chaudhuri
 https://arxiv.org/abs/1909.11316
