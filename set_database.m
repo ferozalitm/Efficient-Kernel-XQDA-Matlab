@@ -2,7 +2,7 @@
 %%set_database.m
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-featuredirname_root = [directry '/Features1/'];
+featuredirname_root = [directry '/Features/'];
 addpath([directry '/Features/']);
 addpath([directry '/DB/']);
 
