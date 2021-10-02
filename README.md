@@ -1,8 +1,9 @@
 # Cross-View Kernel Similarity Metric Learning Using Pairwise Constraints for Person Re-identification
+Accepted in Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP) 20-21, Jodhpur, India
 T M Feroz Ali, Subhasis Chaudhuri
 https://arxiv.org/abs/1909.11316
 
-This repository contains the complete code of Kernel Cross-view Quadratic Discriminant Analysis (K-XQDA). Using this code you can reproduce our result in Table 1 (CUHK01 dataset) of our paper.
+This repository contains the complete code of Efficient Kernel Cross-view Quadratic Discriminant Analysis (EK-XQDA). Using this code you can reproduce our result in Table 1 (CUHK01 dataset) of our paper.
 GOG + k-XQDA : 
 R1 = 62.23% 
 R5 = 83.09% 
@@ -20,7 +21,7 @@ d) CUHK01_feature_all_GOGyMthetaRGB.mat
 2) Edit config.m file:
 Chage the path 'directry' according to the location of code in your system.
 
-3) Run demo_KXQDA.m
+3) Run demo_EKXQDA.m
 
 If you find this work useful, please kindly cite our paper.
 
@@ -30,16 +31,4 @@ author={Ali, TM and Chaudhuri, Subhasis},
 journal={arXiv preprint arXiv:1909.11316},
 year={2019}
 }
-
-
-This code is built upon the code framework of T Matsukawa's work on GOG feature descriptor. Hence please kindly cite the below work as well.
-
-@inproceedings{matsukawa2016hierarchical,
-title={Hierarchical gaussian descriptor for person re-identification},
-author={Matsukawa, Tetsu and Okabe, Takahiro and Suzuki, Einoshin and Sato, Yoichi},
-booktitle={Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition},
-pages={1363--1372},
-year={2016}
-}
-
 
