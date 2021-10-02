@@ -54,7 +54,7 @@ for set = 1:sys.setnum
     [K_b] = RBF_kernel2([galX;probX], galY, mu);  
     K = (K+K')/2;
     
-    [theta, Gamma] = KXQDA(K, probXLabels, galXLabels);    
+    [theta, Gamma] = EKXQDA(K, probXLabels, galXLabels);    
     Gamma_psd = projectPSD((Gamma+Gamma')/2); 
    
     %% single shot matching
