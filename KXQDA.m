@@ -1,8 +1,8 @@
-function [theta, Gamma] = KXQDA(K, probLabels, galLabels )
+function [theta, Gamma] = EKXQDA(K, probLabels, galLabels )
 
 qdaDims = -1;
 
-%% data for KLDA       
+%% data       
 numGals = size(galLabels, 1); 
 numProbs = size(probLabels, 1);
 n = numGals;
