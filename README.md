@@ -14,7 +14,7 @@ R20 = 94.43%
 
 Code setup:
 -------------
-1) You need to download the GOG features for CUHK01 dataset (available at http://www.i.kyushu-u.ac.jp/~matsukawa/ReID_files/GOG_CUHK01.zip) and place the following files inside the folder 'Kernel-XQDA/Features':
+1) You need to download the GOG features for CUHK01 dataset (available at http://www.i.kyushu-u.ac.jp/~matsukawa/ReID_files/GOG_CUHK01.zip) and place the following files inside the folder 'Features':
 a) CUHK01_feature_all_GOGyMthetaHSV.mat
 b) CUHK01_feature_all_GOGyMthetaLab.mat
 c) CUHK01_feature_all_GOGyMthetanRnG.mat
