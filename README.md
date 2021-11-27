@@ -1,3 +1,5 @@
+# Efficient-Kernel-XQDA-Matlab
+
 # Cross-View Kernel Similarity Metric Learning Using Pairwise Constraints for Person Re-identification
 Accepted in Indian Conference on Computer Vision, Graphics and Image Processing (ICVGIP) 20-21, Jodhpur, India
 T M Feroz Ali, Subhasis Chaudhuri
