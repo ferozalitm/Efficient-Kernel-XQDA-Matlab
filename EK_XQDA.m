@@ -1,14 +1,14 @@
-function [theta, Gamma] = EKXQDA(K, probLabels, galLabels )
+function [theta, Gamma] = EK_XQDA(K, probLabels, galLabels )
 
 qdaDims = -1;
 
-%% data       
+% data       
 numGals = size(galLabels, 1); 
 numProbs = size(probLabels, 1);
 n = numGals;
 m = numProbs;
 
-%Eq.(11) in paper
+% Eq.(11) in paper
 K_xx = K(1:numGals, 1:numGals);K_xz = K(1:numGals, numGals+1:numGals+numProbs);
 K_zx = K(numGals+1:numGals+numProbs, 1:numGals);K_zz = K(numGals+1:numGals+numProbs, numGals+1:numGals+numProbs); 
 
@@ -53,7 +53,7 @@ U = m*[K_xx;K_zx]*[K_xx;K_zx]';         %Eq.(38) in paper
 V = n*[K_xz;K_zz]*[K_xz;K_zz]';         %Eq.(39) in paper
 E = [K_xx;K_zx]*ones(n,m)*[K_xz;K_zz]'; %Eq.(40) in paper
 
-%Symmetric matrices correction
+% Symmetric matrices correction
 A = (A+A')/2;
 B = (B+B')/2;
 U = (U+U')/2;
@@ -62,7 +62,7 @@ V = (V+V')/2;
 KexCov = U+V-E-E'-A-B+C+C';             %Eq.(45) in paper
 KinCov = A+B-C-C';                      %Eq.(31) in paper
 
-%Symmetric matrices correction
+% Symmetric matrices correction
 KexCov = (KexCov+KexCov')/2;
 KinCov = (KinCov+KinCov')/2;
 
@@ -73,7 +73,7 @@ KinCov = KinCov / (ni);
 I1 = eye(size(KinCov));
 KinCov = KinCov + (10^-7)*I1;
 
-%Finding eigen system
+% Finding eigen system
 [W, S] = eig(KinCov \ KexCov);
 
 % choose only real elements
@@ -100,7 +100,7 @@ end
 
 theta = W(:, index(1:qdaDims));
     
-%Normalizing theta to ensure discriminants are unit norm
+% Normalizing theta to ensure discriminants are unit norm
 for s = 1:qdaDims
     norm_factor = theta(:,s)'*K*theta(:,s);
     theta(:,s) = theta(:,s)/sqrt(norm_factor);
